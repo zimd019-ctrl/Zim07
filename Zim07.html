@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoinVerra Wallet</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background:linear-gradient(to right,#f5f9ff,#e6f0ff);
+    color:#0a1a33;
+}
+
+/* NAV */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 40px;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+nav h1{
+    color:#007bff;
+}
+nav a{
+    margin-left:15px;
+    text-decoration:none;
+    color:#333;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+.hero h2{
+    font-size:38px;
+}
+.hero p{
+    color:#555;
+}
+
+/* BALANCE CARD */
+.balance{
+    background:white;
+    max-width:400px;
+    margin:30px auto;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    text-align:center;
+}
+.balance h3{
+    color:#777;
+}
+.balance h1{
+    color:#007bff;
+}
+
+/* CHART BOX */
+.chart-box{
+    background:white;
+    max-width:600px;
+    margin:20px auto;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+.bar{
+    height:6px;
+    background:#007bff;
+    margin:8px 0;
+    border-radius:5px;
+    animation:grow 2s infinite alternate;
+}
+
+@keyframes grow{
+    from{width:30%;}
+    to{width:90%;}
+}
+
+/* FEATURES */
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+.card{
+    background:white;
+    width:250px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* SUBSCRIBE */
+.subscribe{
+    background:#007bff;
+    color:white;
+    padding:40px 20px;
+    text-align:center;
+}
+.subscribe input{
+    padding:10px;
+    width:250px;
+    border:none;
+    margin-right:10px;
+}
+.subscribe button{
+    padding:10px 20px;
+    border:none;
+    background:white;
+    color:#007bff;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>CoinVerra</h1>
+    <div>
+        <a href="#">Wallet</a>
+        <a href="#">Trading</a>
+        <a href="#">Learn</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h2>Smart Crypto Wallet & Trading Platform</h2>
+    <p>Secure banking. Flexible trading. Intelligent investing.</p>
+</div>
+
+<!-- BALANCE -->
+<div class="balance">
+    <h3>Available Balance</h3>
+    <h1>$50,000</h1>
+    <p>+12.5% this week</p>
+</div>
+
+<!-- CHART -->
+<div class="chart-box">
+    <h3>Market Growth</h3>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+
+<!-- FEATURES -->
+<div class="section">
+    <h2>Our Services</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Crypto Banking</h3>
+            <p>Store, send and receive crypto with secure wallet systems.</p>
+        </div>
+        <div class="card">
+            <h3>Flexible Trading</h3>
+            <p>Trade anytime with real-time market tracking tools.</p>
+        </div>
+        <div class="card">
+            <h3>Smart Investment</h3>
+            <p>Carefully managed AI-based investment strategies.</p>
+        </div>
+        <div class="card">
+            <h3>Fast Transactions</h3>
+            <p>Instant deposits and withdrawals worldwide.</p>
+        </div>
+    </div>
+</div>
+
+<!-- SUBSCRIBE -->
+<div class="subscribe">
+    <h2>Get Free Trading Lessons</h2>
+    <p>Subscribe to learn crypto trading like a pro</p>
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+</div>
+
+<footer>
+    © 2026 CoinVerra Wallet
+</footer>
+
+</body>
+</html>
